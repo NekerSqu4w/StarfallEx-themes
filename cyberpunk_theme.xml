@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<!-- this theme is based on this visual studio theme: https://marketplace.visualstudio.com/items?itemName=T0uchM3.CTVS19&ssr=false#overview -->
+<!-- this may be not accurate due to StarfallEx editor limitation -->
+
 <plist version="1.0">
 <dict>
 	<key>name</key>
@@ -10,8 +14,8 @@
 		<string>#000b1e</string>
 		<key>foreground</key>
 		<string>#ff007f</string>
-		<key>selection</key>
-		<string>#divider</string>
+		<string>divider</string>
+		<string>#007379</string>
 	</dict>
 	<key>settings</key>
 	<array>
@@ -33,6 +37,7 @@
 			</dict>
 		</dict>
 		<dict>
+			<!-- single / multi line comment -->
 			<key>name</key>
 			<string>Comment</string>
 			<key>scope</key>
@@ -44,6 +49,7 @@
 			</dict>
 		</dict>
 		<dict>
+			<!-- string "your text" -->
 			<key>name</key>
 			<string>String</string>
 			<key>scope</key>
@@ -55,6 +61,7 @@
 			</dict>
 		</dict>
 		<dict>
+			<!-- function like print() -->
 			<key>name</key>
 			<string>Function</string>
 			<key>scope</key>
@@ -66,6 +73,7 @@
 			</dict>
 		</dict>
 		<dict>
+			<!-- library. like 'render.' -->
 			<key>name</key>
 			<string>Class name</string>
 			<key>scope</key>
@@ -77,6 +85,7 @@
 			</dict>
 		</dict>
 		<dict>
+			<!-- constants -->
 			<key>name</key>
 			<string>Built-in constant</string>
 			<key>scope</key>
@@ -88,6 +97,19 @@
 			</dict>
 		</dict>
 		<dict>
+			<!-- function, local -->
+			<key>name</key>
+			<string>Storage type</string>
+			<key>scope</key>
+			<string>storage</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#a162ff</string>
+			</dict>
+		</dict>
+		<dict>
+			<!-- while, if, then, else-->
 			<key>name</key>
 			<string>Keyword</string>
 			<key>scope</key>
@@ -99,6 +121,7 @@
 			</dict>
 		</dict>
 		<dict>
+			<!-- number literal -->
 			<key>name</key>
 			<string>Number</string>
 			<key>scope</key>
@@ -110,6 +133,7 @@
 			</dict>
 		</dict>
 		<dict>
+			<!-- a variable -->
 			<key>name</key>
 			<string>Variable</string>
 			<key>scope</key>
@@ -118,6 +142,18 @@
 			<dict>
 				<key>foreground</key>
 				<string>#ff007f</string>
+			</dict>
+		</dict>
+		<dict>
+			<!-- all operators like +-*=<> -->
+			<key>name</key>
+			<string>Operators</string>
+			<key>scope</key>
+			<string>operator</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ceeef0</string>
 			</dict>
 		</dict>
 	</array>
